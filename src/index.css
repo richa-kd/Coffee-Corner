@@ -29,8 +29,8 @@
 }
 
 #navbar_logo {
-  background-color: #e95e8d;
-  background-image: linear-gradient(to top, #803b52 0%, #e95e8d 70%);
+  background-color: #9a642e;
+  background-image: linear-gradient(to top, #9a642e 0%, #fff 70%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -59,7 +59,7 @@
 }
 
 .navbar_links {
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,7 +224,7 @@
 .main_content h1 {
   font-size: 4rem;
   background-color: #b9476d;
-  background-image: linear-gradient(to top, #803b52 0%, #e95e8d 70%);
+  background-image: linear-gradient(to top, #562b00 0%, #030200 70%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -282,5 +282,103 @@
   .main_btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+  }
+}
+
+.services {
+  background: #9a642e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.services h1 {
+  background-color: #fff;
+  background-image: linear-gradient(to top, #803b52 0%, #e95e8d 0%);
+  background-size: 100%;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: 30px;
+}
+
+.services_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services_card {
+  margin: 1rem;
+  height: 525px;
+  width: 300px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/menu.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.services_card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("images/menu.jpg");
+}
+
+.services h2 {
+  text-align: center;
+  margin-top: 10px;
+  top: 350px;
+  left: 30px;
+}
+
+.services_card p {
+  margin-left: 20px;
+  margin-top: 20px;
+  top: 400px;
+  left: 30px;
+  margin-bottom: 1rem;
+}
+
+.services_card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .services {
+    height: 1600px;
+  }
+
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    height: 1400px;
+  }
+
+  .services h1 {
+    font-size: 1.2rem;
+  }
+
+  .services_card {
+    width: 300px;
   }
 }
