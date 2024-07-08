@@ -382,3 +382,76 @@
     width: 300px;
   }
 }
+
+#datepicker {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+#datepicker:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#datepicker:hover {
+  border-color: #b8daff;
+}
+
+#appt-time {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+#appt-time:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#appt-time:hover {
+  border-color: #b8daff;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.btn-primary {
+  margin: 20px;
+  font-size: 15px;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+  background-color: #9a642e;
+}
+
+.form-heading h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  background-color: #664524;
+  font-family: "Times New Roman", Times, serif;
+}
