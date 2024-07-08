@@ -295,7 +295,7 @@
 
 .services h1 {
   background-color: #fff;
-  background-image: linear-gradient(to top, #803b52 0%, #e95e8d 0%);
+  background-image: #fff;
   background-size: 100%;
   margin-bottom: 5rem;
   font-size: 2.5rem;
@@ -322,7 +322,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("/images/menu.jpg");
+    url("menu.jpg");
   background-size: cover;
   position: relative;
   color: #fff;
@@ -334,7 +334,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("/images/menu.jpg");
+    url("menu.jpg");
 }
 
 .services h2 {
