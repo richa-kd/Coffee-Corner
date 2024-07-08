@@ -322,7 +322,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/menu.jpg");
+    url("/images/menu.jpg");
   background-size: cover;
   position: relative;
   color: #fff;
@@ -334,7 +334,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/menu.jpg");
+    url("/images/menu.jpg");
 }
 
 .services h2 {
