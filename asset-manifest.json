@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-bootstrap-tutorial/static/css/main.e8cc1600.css",
+    "main.js": "/react-bootstrap-tutorial/static/js/main.29180fc3.js",
+    "static/js/453.7ce3f109.chunk.js": "/react-bootstrap-tutorial/static/js/453.7ce3f109.chunk.js",
+    "static/media/menu.jpg": "/react-bootstrap-tutorial/static/media/menu.8a153e33a85490c022fa.jpg",
+    "index.html": "/react-bootstrap-tutorial/index.html",
+    "main.e8cc1600.css.map": "/react-bootstrap-tutorial/static/css/main.e8cc1600.css.map",
+    "main.29180fc3.js.map": "/react-bootstrap-tutorial/static/js/main.29180fc3.js.map",
+    "453.7ce3f109.chunk.js.map": "/react-bootstrap-tutorial/static/js/453.7ce3f109.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8cc1600.css",
+    "static/js/main.29180fc3.js"
+  ]
+}
