@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector(".navbar_menu");
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+menu.addEventListener("click", function () {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+});
 
-export default App;
+$(document).ready(function () {
+  $("#datepicker").datepicker();
+});
