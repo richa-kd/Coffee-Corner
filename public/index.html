@@ -33,16 +33,16 @@
             <a href="/history.html" class="navbar_links">History</a>
           </li>
           <li class="navbar_item">
-            <a href="/menu.html" class="navbar_links">Menu</a>
+            <a href="./menu.html" class="navbar_links">Menu</a>
           </li>
           <li class="navbar_item">
             <a href="/customize.html" class="navbar_links">Customize</a>
           </li>
           <li class="navbar_item">
-            <a href="/reserve.html" class="navbar_links">Reserve</a>
+            <a href="./reserve.html" class="navbar_links">Reserve</a>
           </li>
           <li class="navbar_item">
-            <a href="/events.html" class="navbar_links">Events</a>
+            <a href="./events.html" class="navbar_links">Events</a>
           </li>
         </ul>
       </div>
@@ -53,10 +53,287 @@
           <h1>Coffee Corner</h1>
         </div>
         <div class="main_img-container">
-          <img src="/images/home.jpg" alt="home" class="main_img" />
+          <img src="images/home.jpg" alt="home" class="main_img" />
         </div>
       </div>
     </div>
+
+    <section id="menu">
+      <div class="services">
+        <h1>Menu</h1>
+        <div class="services_container">
+          <div class="services_card">
+            <h2>Coffee & Tea</h2>
+            <p>Brewed Coffee $3</p>
+            <p>
+              <em style="font-size: 15px">> Freshly brewed coffee</em>
+            </p>
+            <p>Latte $5</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Espresso with steamed milk and a hint of froth</em
+              >
+            </p>
+            <p>Cappuccino $5</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Espresso with equal parts steamed milk and froth</em
+              >
+            </p>
+            <p>Matcha Latte $6</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Green tea powder with steamed milk</em
+              >
+            </p>
+            <p>Chai Latte $4.5</p>
+            <p>
+              <em style="font-size: 15px">> Spiced tea with steamed milk</em>
+            </p>
+          </div>
+          <div class="services_card">
+            <h2>Baked Goods</h2>
+            <p>Croissant $4</p>
+            <p>
+              <em style="font-size: 15px">> Buttery, flaky pastry</em>
+            </p>
+            <p>Chocolatine $4.5</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Flaky pastry filled with chocolate</em
+              >
+            </p>
+            <p>Raspberry Scone $4.5</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Buttery sweet scone with tangy raspberries</em
+              >
+            </p>
+          </div>
+          <div class="services_card">
+            <h2>Wraps</h2>
+            <p>Chicken Bacon Wrap $8</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Savory chicken and crispy bacon with ranch, wrapped in a soft
+                tortilla</em
+              >
+            </p>
+            <p>Pesto & Feta Cheese Wrap $7</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Flavorful pesto, creamy feta cheese, and salsa wrapped in a
+                soft tortilla</em
+              >
+            </p>
+            <p>Egg & Cheese Breakfast Wrap $5.5</p>
+            <p>
+              <em style="font-size: 15px"
+                >> Scrambled eggs, melted cheese, and salsa wrapped in a warm
+                tortilla</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve">
+      <form id="bookingForm">
+        <div class="form-heading">
+          <h2>Reserve</h2>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstname"
+              aria-describedby="firstnameHelp"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              aria-describedby="lastnameHelp"
+              placeholder="Enter Last Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2" for="inlineFormCustomSelect"
+                >Number of Seats</label
+              >
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">More</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEvent1">Event</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEvent1"
+              aria-describedby="eventHelp"
+              placeholder="Enter Event"
+            />
+          </div>
+          <div class="form-group">
+            <label for="datepicker">Choose a date</label>
+            <input type="text" class="form-control" id="datepicker" />
+          </div>
+          <div class="form-group">
+            <label for="appt-time">Choose a time:</label>
+            <input
+              type="time"
+              id="appt-time"
+              name="appt-time"
+              min="09:00"
+              max="17:00"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputRequests1">Any Extra Requests:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputRequests1"
+              aria-describedby="requestsHelp"
+              placeholder="Enter Requests"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Reservation Request Received
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              You have successfully sent in your reservation request! An email
+              will be sent with the details of your reservation once reviewed. See
+              you soon!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="tech-heading">
+        <h2>Events</h2>
+        <div class="tech-container">
+          <div class="tech-col">
+            <div class="tech_img-container">
+              <img src="/images/livemusic.jpg" alt="tech1" class="tech_img" />
+            </div>
+          </div>
+          <div class="tech-col">
+            <h1>Live Music Night</h1>
+            <p>Immerse yourself in the soulful melodies of local musicians as they perform live at our cafe. Our cozy ambiance create the perfect backdrop for an evening of relaxation and enjoyment.</p>
+          </div>
+          <div class="tech-col">
+            <div class="tech_img-container">
+              <img src="/images/bookclub.jpg" alt="tech2" class="tech_img" />
+            </div>
+          </div>
+          <div class="tech-col">
+            <h1>Book Club Gathering</h1>
+            <p>Each month, we delve into a new book, sharing insights and perspectives in a welcoming environment. Whether you're a seasoned reader or just discovering the joy of literature, our book club offers a space to connect and explore together.</p>
+            </div>
+            <div class="tech-col">
+              <div class="tech_img-container">
+                <img src="/images/trivia.jpg" alt="tech3" class="tech_img" />
+              </div>
+            </div>
+            <div class="tech-col">
+              <h1>Trivia Nights</h1>
+              <p>Test your knowledge and compete for prizes in our exhilarating trivia nights. Gather your friends or join a team to tackle a variety of fun and challenging trivia questions while savoring our specialty coffees and delectable snacks.</p>
+            </div>
+            <div class="tech-col">
+              <div class="tech_img-container">
+                <img src="/images/art.jpg" alt="tech4" class="tech_img" />
+              </div>
+            </div>
+            <div class="tech-col">
+              <h1>Art and Coffee</h1>
+              <p>Join us for a relaxing afternoon of creativity and coffee. Bring your own art supplies or use ours to create while sipping on your favorite brew.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="App.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      document.ready(function () {
+        $("#datepicker").datepicker({
+          format: "yyyy-mm-dd",
+        });
+
+        "#bookingForm".on("submit", function (e) {
+          e.preventDefault();
+          "#exampleModalCenter".modal("show");
+        });
+      });
+    </script>
   </body>
 </html>
