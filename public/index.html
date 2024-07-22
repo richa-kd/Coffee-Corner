@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" type="text/css">
   </head>
   <body>
     <nav class="navbar">
@@ -27,19 +28,19 @@
         </div>
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="/shop.html" class="navbar_links">Shop</a>
+            <a href="/" class="navbar_links">Shop</a>
           </li>
           <li class="navbar_item">
             <a href="/history.html" class="navbar_links">History</a>
           </li>
           <li class="navbar_item">
-            <a href="./menu.html" class="navbar_links">Menu</a>
+            <a href="#menu" class="navbar_links">Menu</a>
           </li>
           <li class="navbar_item">
             <a href="/customize.html" class="navbar_links">Customize</a>
           </li>
           <li class="navbar_item">
-            <a href="./reserve.html" class="navbar_links">Reserve</a>
+            <a href="#reserve" class="navbar_links">Reserve</a>
           </li>
           <li class="navbar_item">
             <a href="./events.html" class="navbar_links">Events</a>
@@ -47,16 +48,70 @@
         </ul>
       </div>
     </nav>
+
     <div class="main">
       <div class="main_container">
         <div class="main_content">
-          <h1>Coffee Corner</h1>
+          <h1>Welcome to our online Coffee Corner, where you can explore our diverse menu, learn our story, and stay updated with our latest events</h1>
+          <button class="main_btn">
+            <a href="#menu">View Menu</a>
+          </button>
         </div>
         <div class="main_img-container">
           <img src="images/home.jpg" alt="home" class="main_img" />
         </div>
       </div>
     </div>
+
+    <section id="faceted-search" class="faceted-search-section">
+      <div class="container">
+          <h2>Our Coffee</h2>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="filter-panel">
+                      <h4>Filters</h4>
+                      <div class="filter-group">
+                          <h5>Roast</h5>
+                          <ul>
+                              <li><input type="checkbox" class="filter" data-filter="roast" value="light"> Light Roast</li>
+                              <li><input type="checkbox" class="filter" data-filter="roast" value="medium"> Medium Roast</li>
+                              <li><input type="checkbox" class="filter" data-filter="roast" value="dark"> Dark Roast</li>
+                          </ul>
+                      </div>
+                      <div class="filter-group">
+                          <h5>Origin</h5>
+                          <ul>
+                              <li><input type="checkbox" class="filter" data-filter="origin" value="single"> Single Origin</li>
+                              <li><input type="checkbox" class="filter" data-filter="origin" value="blend"> Blend </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-9">
+                  <div class="coffees">
+                      <div class="items" data-category="light" data-origin="single">
+                          <img src="" alt="Light Roast">
+                          <h3>Light Roast - Single Origin</h3>
+                          <p>$20</p>
+                          <button class="btn btn-blue buy" data-product="light" data-price="20">Buy</button>
+                      </div>
+                      <div class="items" data-category="medium" data-origin="blend">
+                          <img src="" alt="Medium Roast">
+                          <h3>Medium Roast - Blend Origin</h3>
+                          <p>$18</p>
+                          <button class="btn btn-blue buy" data-product="medium" data-price="18">Buy</button>
+                      </div>
+                      <div class="items" data-category="dark" data-origin="single">
+                          <img src="" alt="Dark Roast">
+                          <h3>Dark Roast - Single Origin</h3>
+                          <p>$20</p>
+                          <button class="btn btn-blue buy" data-product="dark" data-price="20">Buy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <section id="menu">
       <div class="services">
@@ -318,7 +373,8 @@
       </div>
     </section>
 
-    <script src="App.js"></script>
+    <script src="/src/App.js"></script>
+    <script src="faceted-search.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
