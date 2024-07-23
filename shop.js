@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const filters = document.querySelectorAll(".filter");
-  const productList = document.querySelectorAll(".items");
+  const productList = document.querySelectorAll(".product-item");
   const purchaseModal = new bootstrap.Modal(
     document.getElementById("purchaseModal")
   );
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const productName = this.getAttribute("data-product");
       const productOrigin = this.getAttribute("data-origin");
       document.getElementById("productName").value = productName;
-      document.getElementById("productPrice").value = `$${productPrice}`;
+      document.getElementById("productOrigin").value = `$${productOrigin}`;
       purchaseModal.show();
     });
   });
@@ -72,14 +72,14 @@ document.addEventListener("DOMContentLoaded", function () {
   purchaseForm.addEventListener("submit", function (event) {
     event.preventDefault();
     const productName = document.getElementById("productName").value;
-    const productPrice = document.getElementById("productPrice").value;
+    const productOrigin = document.getElementById("productOrigin").value;
     document.getElementById("confirmProductName").innerText = productName;
-    document.getElementById("confirmProductPrice").innerText = productPrice;
+    document.getElementById("confirmProductOrigin").innerText = productOrigin;
     purchaseModal.hide();
     confirmationModal.show();
 
     // Store and display confirmed purchase
-    const purchase = { name: productName, price: productPrice };
+    const purchase = { name: productName, origin: productOrigin };
     confirmedPurchases.push(purchase);
     updatePurchaseList();
   });
@@ -88,17 +88,21 @@ document.addEventListener("DOMContentLoaded", function () {
     purchaseList.innerHTML = "";
     confirmedPurchases.forEach((purchase) => {
       const li = document.createElement("li");
-      li.textContent = `${purchase.name} - ${purchase.price}`;
+      li.textContent = `${purchase.name} - ${purchase.origin}`;
       purchaseList.appendChild(li);
     });
   }
 
-  // Contact form functionality
-  const contactForm = document.querySelector(".contact-form form");
+  /*reserve*/
+  const menu = document.querySelector("#mobile-menu");
+  const menuLinks = document.querySelector(".navbar_menu");
 
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    contactConfirmationModal.show();
-    contactForm.reset(); // Clear the form fields
+  menu.addEventListener("click", function () {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.toggle("active");
+  });
+
+  document.ready(function () {
+    "#datepicker".datepicker();
   });
 });
