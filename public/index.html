@@ -28,22 +28,25 @@
         </div>
         <ul class="navbar_menu">
           <li class="navbar_item">
-            <a href="/" class="navbar_links">Shop</a>
+            <a href="#shop" class="navbar_links">Shop</a>
           </li>
           <li class="navbar_item">
-            <a href="/history.html" class="navbar_links">History</a>
+            <a href="#our-story" class="navbar_links">Our Story</a>
           </li>
           <li class="navbar_item">
             <a href="#menu" class="navbar_links">Menu</a>
           </li>
           <li class="navbar_item">
-            <a href="/customize.html" class="navbar_links">Customize</a>
+            <a href="#customize" class="navbar_links">Customize</a>
           </li>
           <li class="navbar_item">
             <a href="#reserve" class="navbar_links">Reserve</a>
           </li>
           <li class="navbar_item">
-            <a href="./events.html" class="navbar_links">Events</a>
+            <a href="#events" class="navbar_links">Events</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#faq" class="navbar_links">FAQ</a>
           </li>
         </ul>
       </div>
@@ -63,9 +66,9 @@
       </div>
     </div>
 
-    <section id="faceted-search" class="faceted-search-section">
+    <section id="shop" class="faceted-search">
       <div class="container">
-          <h2>Our Coffee</h2>
+          <h2>Shop</h2>
           <div class="row">
               <div class="col-md-3">
                   <div class="filter-panel">
@@ -88,20 +91,20 @@
                   </div>
               </div>
               <div class="col-md-9">
-                  <div class="coffees">
-                      <div class="items" data-category="light" data-origin="single">
+                  <div class="product-list">
+                      <div class="product-item" data-roast="light" data-origin="single">
                           <img src="" alt="Light Roast">
                           <h3>Light Roast - Single Origin</h3>
                           <p>$20</p>
                           <button class="btn btn-blue buy" data-product="light" data-price="20">Buy</button>
                       </div>
-                      <div class="items" data-category="medium" data-origin="blend">
+                      <div class="product-item" data-roast="medium" data-origin="blend">
                           <img src="" alt="Medium Roast">
                           <h3>Medium Roast - Blend Origin</h3>
                           <p>$18</p>
                           <button class="btn btn-blue buy" data-product="medium" data-price="18">Buy</button>
                       </div>
-                      <div class="items" data-category="dark" data-origin="single">
+                      <div class="product-item" data-roast="dark" data-origin="single">
                           <img src="" alt="Dark Roast">
                           <h3>Dark Roast - Single Origin</h3>
                           <p>$20</p>
@@ -113,8 +116,24 @@
       </div>
   </section>
 
+  <section id="our-story" class="our-story">
+    <div class="story-container">
+        <div class="storycolumn video-column">
+            <!-- YouTube video embed -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qi-2Z-QE9pc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="storycolumn text-column">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to our cafe! We're passionate about serving the finest coffee and creating a warm, inviting atmosphere for our customers. Our story began with a simple dream to offer exceptional coffee and a place where people could come together, relax, and enjoy each other's company. From our carefully sourced beans to our expert baristas, every aspect of our cafe is designed to bring you the best coffee experience possible. Thank you for being a part of our journey!
+            </p>
+        </div>
+    </div>
+</section>
+
     <section id="menu">
       <div class="services">
+      <div class="services-heading">
         <h1>Menu</h1>
         <div class="services_container">
           <div class="services_card">
@@ -191,12 +210,76 @@
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+    <section id="customize">
+      <div class="drink-customizer-container">
+      <div id="drink-customizer" class="drink-customizer">
+        <h2>Customize Your Drink</h2>
+        <div>
+            <p>Base:</p>
+            <label>
+                <input type="radio" name="base" value="Brewed Coffee" data-price="3" checked>
+                Brewed Coffee ($3.00)
+            </label>
+            <label>
+                <input type="radio" name="base" value="Latte" data-price="5">
+                Latte ($5.00)
+            </label>
+            <label>
+                <input type="radio" name="base" value="Cappuccino" data-price="5">
+                Cappuccino ($5.00)
+            </label>
+        </div>
+        <div>
+            <p>Milk:</p>
+            <label>
+                <input type="radio" name="milk" value="Regular" data-price="0" checked>
+                Regular ($0.00)
+            </label>
+            <label>
+                <input type="radio" name="milk" value="Soy" data-price="0.5">
+                Soy ($0.50)
+            </label>
+            <label>
+                <input type="radio" name="milk" value="Almond" data-price="0.5">
+                Almond ($0.50)
+            </label>
+        </div>
+        <div>
+            <p>Syrup:</p>
+            <label>
+                <input type="radio" name="syrup" value="Vanilla" data-price="0.5" checked>
+                Vanilla ($0.50)
+            </label>
+            <label>
+                <input type="radio" name="syrup" value="Caramel" data-price="0.5">
+                Caramel ($0.50)
+            </label>
+            <label>
+                <input type="radio" name="syrup" value="Hazelnut" data-price="0.5">
+                Hazelnut ($0.50)
+            </label>
+        </div>
+        <div>
+            <h3 id="total-price">Total Price: $3.00</h3>
+        </div>
+    </div>
+    </div>
     </section>
 
     <section id="reserve">
       <form id="bookingForm">
         <div class="form-heading">
           <h2>Reserve</h2>
+          <div class="form-container">
+            <div class="form-col">
+              <div class="form_img-container">
+                <img src="" alt="form" class="form_img" />
+              </div>
+            </div>
+            <div class="form-col">
           <div class="form-group">
             <label for="firstname">First Name</label>
             <input
@@ -268,8 +351,8 @@
               type="time"
               id="appt-time"
               name="appt-time"
-              min="09:00"
-              max="17:00"
+              min="06:00"
+              max="19:00"
               required
             />
           </div>
@@ -286,6 +369,8 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
+    </div>
+  
       <div
         class="modal fade"
         id="exampleModalCenter"
@@ -326,9 +411,11 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <section id="events">
+    <div class="tech">
       <div class="tech-heading">
         <h2>Events</h2>
         <div class="tech-container">
@@ -371,10 +458,81 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
-    <script src="/src/App.js"></script>
-    <script src="faceted-search.js"></script>
+    <section id="faq" class="faq-container">
+      <div class="faq-content">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-item">
+              <button class="faq-question">
+                  What are your opening hours?
+                  <span class="arrow">&#9662;</span> <!-- Down arrow -->
+              </button>
+              <div class="faq-answer">
+                  <p>We are open from 6 AM to 7 PM, 7 Days a Week.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">
+                Is your coffee fair trade certified?
+                  <span class="arrow">&#9662;</span> <!-- Down arrow -->
+              </button>
+              <div class="faq-answer">
+                  <p>Absolutely! We are committed to supporting fair trade practices, ensuring that our coffee is ethically sourced and farmers receive fair compensation.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">
+                What payment methods do you accept?
+                  <span class="arrow">&#9662;</span> <!-- Down arrow -->
+              </button>
+              <div class="faq-answer">
+                  <p>We accept a variety of payment methods including credit and debit cards, cash, and mobile payment options.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">
+                  Do you offer Wi-Fi?
+                  <span class="arrow">&#9662;</span> <!-- Down arrow -->
+              </button>
+              <div class="faq-answer">
+                  <p>Yes, we provide free Wi-Fi to all our customers.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">
+                  Are pets allowed in the cafe?
+                  <span class="arrow">&#9662;</span> <!-- Down arrow -->
+              </button>
+              <div class="faq-answer">
+                  <p>We welcome pets in our outdoor seating area. Only service animals are allowed inside the cafe.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <div class="footer_container">
+      <div class="footer_links">
+        <div class="footer_links-wrapper">
+          <div class="footer_links-items">
+            <h2>Contact Us</h2>
+            <p>Email: support@coffeecorner.ca</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Open 7 Days a Week: 6am - 7pm</p>
+          </div>
+          <div class="footer_links-items">
+            <a href="https://maps.app.goo.gl/x1Pupo3AKZSEt2xc6">
+              <img src="/images/map.png" alt="map" class="footer_map" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="customizedrink.js"></script>
+    <script src="shop.js"></script>
+    <script src="faq.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
