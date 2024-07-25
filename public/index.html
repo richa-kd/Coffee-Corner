@@ -121,7 +121,7 @@
     <div class="story-container">
         <div class="storycolumn video-column">
             <!-- YouTube video embed -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qi-2Z-QE9pc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="560" src="https://www.youtube.com/embed/qi-2Z-QE9pc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="storycolumn text-column">
             <h2>Our Story</h2>
@@ -214,61 +214,69 @@
       </div>
     </section>
 
-    <section id="customize">
+    
+
+  <!-- Drink customization section -->
+  <section id="customize">
+    <!-- Language toggle -->
+  <div class="language-toggle">
+      <button id="en-button">English</button>
+      <button id="fr-button">Français</button>
+  </div>
       <div class="drink-customizer-container">
-      <div id="drink-customizer" class="drink-customizer">
-        <h2>Customize Your Drink</h2>
-        <div>
-            <p>Base:</p>
-            <label>
-                <input type="radio" name="base" value="Brewed Coffee" data-price="3" checked>
-                Brewed Coffee ($3.00)
-            </label>
-            <label>
-                <input type="radio" name="base" value="Latte" data-price="5">
-                Latte ($5.00)
-            </label>
-            <label>
-                <input type="radio" name="base" value="Cappuccino" data-price="5">
-                Cappuccino ($5.00)
-            </label>
-        </div>
-        <div>
-            <p>Milk:</p>
-            <label>
-                <input type="radio" name="milk" value="Regular" data-price="0" checked>
-                Regular ($0.00)
-            </label>
-            <label>
-                <input type="radio" name="milk" value="Soy" data-price="0.5">
-                Soy ($0.50)
-            </label>
-            <label>
-                <input type="radio" name="milk" value="Almond" data-price="0.5">
-                Almond ($0.50)
-            </label>
-        </div>
-        <div>
-            <p>Syrup:</p>
-            <label>
-                <input type="radio" name="syrup" value="Vanilla" data-price="0.5" checked>
-                Vanilla ($0.50)
-            </label>
-            <label>
-                <input type="radio" name="syrup" value="Caramel" data-price="0.5">
-                Caramel ($0.50)
-            </label>
-            <label>
-                <input type="radio" name="syrup" value="Hazelnut" data-price="0.5">
-                Hazelnut ($0.50)
-            </label>
-        </div>
-        <div>
-            <h3 id="total-price">Total Price: $3.00</h3>
-        </div>
-    </div>
-    </div>
-    </section>
+          <div id="drink-customizer" class="drink-customizer">
+              <h2 data-en="Customize Your Drink" data-fr="Personnalisez votre boisson">Customize Your Drink</h2>
+              <div>
+                  <p data-en="Base:" data-fr="Base :">Base:</p>
+                  <label>
+                      <input type="radio" name="base" value="Brewed Coffee" data-price="3" checked>
+                      <span data-en="Brewed Coffee ($3.00)" data-fr="Café infusé (3,00$)">Brewed Coffee ($3.00)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="base" value="Latte" data-price="5">
+                      <span data-en="Latte ($5.00)" data-fr="Latte (5,00$)">Latte ($5.00)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="base" value="Cappuccino" data-price="5">
+                      <span data-en="Cappuccino ($5.00)" data-fr="Cappuccino (5,00$)">Cappuccino ($5.00)</span>
+                  </label>
+              </div>
+              <div>
+                  <p data-en="Milk:" data-fr="Lait :">Milk:</p>
+                  <label>
+                      <input type="radio" name="milk" value="Regular" data-price="0" checked>
+                      <span data-en="Regular ($0.00)" data-fr="Régulier (0,00$)">Regular ($0.00)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="milk" value="Soy" data-price="0.5">
+                      <span data-en="Soy ($0.50)" data-fr="Soja (0,50$)">Soy ($0.50)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="milk" value="Almond" data-price="0.5">
+                      <span data-en="Almond ($0.50)" data-fr="Amande (0,50$)">Almond ($0.50)</span>
+                  </label>
+              </div>
+              <div>
+                  <p data-en="Syrup:" data-fr="Sirop :">Syrup:</p>
+                  <label>
+                      <input type="radio" name="syrup" value="Vanilla" data-price="0.5" checked>
+                      <span data-en="Vanilla ($0.50)" data-fr="Vanille (0,50$)">Vanilla ($0.50)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="syrup" value="Caramel" data-price="0.5">
+                      <span data-en="Caramel ($0.50)" data-fr="Caramel (0,50$)">Caramel ($0.50)</span>
+                  </label>
+                  <label>
+                      <input type="radio" name="syrup" value="Hazelnut" data-price="0.5">
+                      <span data-en="Hazelnut ($0.50)" data-fr="Noisette (0,50$)">Hazelnut ($0.50)</span>
+                  </label>
+              </div>
+              <div>
+                  <h3 id="total-price">Total Price: $3.00</h3>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <section id="reserve">
       <form id="bookingForm">
@@ -422,38 +430,42 @@
         <div class="tech-container">
           <div class="tech-col">
             <div class="tech_img-container">
-              <img src="/images/livemusic.jpg" alt="tech1" class="tech_img" />
+              <img src="images/livemusic.jpg" alt="tech1" class="tech_img" />
             </div>
           </div>
           <div class="tech-col">
             <h1>Live Music Night</h1>
+            <p1>Fridays 5pm-7pm</p1>
             <p>Immerse yourself in the soulful melodies of local musicians as they perform live at our cafe. Our cozy ambiance create the perfect backdrop for an evening of relaxation and enjoyment.</p>
           </div>
           <div class="tech-col">
             <div class="tech_img-container">
-              <img src="/images/bookclub.jpg" alt="tech2" class="tech_img" />
+              <img src="images/bookclub.jpg" alt="tech2" class="tech_img" />
             </div>
           </div>
           <div class="tech-col">
             <h1>Book Club Gathering</h1>
+            <p1>Sundays 2pm-4pm</p1>
             <p>Each month, we delve into a new book, sharing insights and perspectives in a welcoming environment. Whether you're a seasoned reader or just discovering the joy of literature, our book club offers a space to connect and explore together.</p>
             </div>
             <div class="tech-col">
               <div class="tech_img-container">
-                <img src="/images/trivia.jpg" alt="tech3" class="tech_img" />
+                <img src="images/trivia.jpg" alt="tech3" class="tech_img" />
               </div>
             </div>
             <div class="tech-col">
               <h1>Trivia Nights</h1>
+              <p1>Tuesdays 5pm-7pm</p1>
               <p>Test your knowledge and compete for prizes in our exhilarating trivia nights. Gather your friends or join a team to tackle a variety of fun and challenging trivia questions while savoring our specialty coffees and delectable snacks.</p>
             </div>
             <div class="tech-col">
               <div class="tech_img-container">
-                <img src="/images/art.jpg" alt="tech4" class="tech_img" />
+                <img src="images/art.jpg" alt="tech4" class="tech_img" />
               </div>
             </div>
             <div class="tech-col">
               <h1>Art and Coffee</h1>
+              <p1>Saturdays 12pm-2pm</p1>
               <p>Join us for a relaxing afternoon of creativity and coffee. Bring your own art supplies or use ours to create while sipping on your favorite brew.</p>
               </div>
           </div>
@@ -521,6 +533,14 @@
             <p>Email: support@coffeecorner.ca</p>
             <p>Phone: 123-456-7890</p>
             <p>Open 7 Days a Week: 6am - 7pm</p>
+            <p>Find a Coffeehouse</p>
+          </div>
+          <div class="footer_links-items">
+            <h2>Quick Links</h2>
+            <p>Gift Card Balance</p>
+            <p>Careers</p>
+            <p>My Account</p>
+            <p>Terms of Service</p>
           </div>
           <div class="footer_links-items">
             <a href="https://maps.app.goo.gl/x1Pupo3AKZSEt2xc6">
@@ -531,6 +551,7 @@
       </div>
     </div>
     <script src="/src/index.js"></script>
+    <script src="language.js"></script>
     <script src="customizedrink.js"></script>
     <script src="shop.js"></script>
     <script src="faq.js"></script>
