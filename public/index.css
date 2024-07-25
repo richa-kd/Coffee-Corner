@@ -7,7 +7,7 @@
 
 .navbar {
   background-color: #562b00;
-  height: 180px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +206,7 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
+  height: auto;
   background-color: #fff;
   z-index: 1;
   width: 100%;
@@ -333,7 +333,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
+  width: 100%;
+  padding: 0;
 }
 
 .services-heading h1 {
@@ -351,7 +353,7 @@
 }
 
 .services_card {
-  margin: 1rem;
+  margin: 1.5rem;
   height: 525px;
   width: 300px;
   border-radius: 4px;
@@ -541,6 +543,10 @@ form {
   font-size: 1.25rem;
 }
 
+.form-col button {
+  background-color: #562b00;
+}
+
 .tech {
   background-color: #fff;
 }
@@ -614,6 +620,10 @@ form {
 .faceted-search {
   padding: 50px 0;
   background-color: #9a642e;
+}
+
+.faceted-search h2 {
+  color: #fff;
 }
 
 .filter-panel {
