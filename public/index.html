@@ -560,14 +560,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script>
-      document.ready(function () {
+      $(document).ready(function () {
         $("#datepicker").datepicker({
           format: "yyyy-mm-dd",
         });
 
-        "#bookingForm".on("submit", function (e) {
+        $("#bookingForm").on("submit", function (e) {
           e.preventDefault();
-          "#exampleModalCenter".modal("show");
+          $("#exampleModalCenter").modal("show");
         });
       });
     </script>
